@@ -54,17 +54,9 @@ def connect_to_mongo(username = None, password = None, server_address = None, de
     try:
         client.admin.command('ping')
         if debug:
-            print("\n\n\n\n_____________________________\n")
             print("Pinged your deployment. You successfully connected to MongoDB!")
-            print("_____________________________")
-            print("_____________________________\n")
-            print("Access the application at\nhttp://localhost:3421")
-            print("_____________________________\n\n\n\n")
     except Exception as e:
-        print("\n\n\n\n_____________________________\n")
         print("UNABLE TO CONNECT TO DATABASE")
-        print("_____________________________\n\n\n\n")
-        print(e)
 
     return client
 
