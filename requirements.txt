@@ -1,0 +1,13 @@
+For now, just pip install for all the following libraries
+import random
+import string
+from pymongo.mongo_client import MongoClient
+from pymongo.server_api import ServerApi
+from pymongo.collation import Collation
+from dotenv import load_dotenv
+from datetime import datetime
+import os
+import json
+import re
+
+It's 2:25 AM, and I cannot be bothered to do pip version of each of these to genearate a requirements.txt file. I will do it later.
